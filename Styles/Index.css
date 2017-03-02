@@ -1,0 +1,15 @@
+.container-fluid {
+  margin-top: 40px;
+}
+
+#left-panel {
+  outline: 1px dashed grey;
+  min-height: 500px;
+  /*border-collapse: collapse;*/
+}
+
+#right-panel {
+  outline: 1px dashed grey;
+  min-height: 500px;
+  /*border-collapse: collapse;*/
+}

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="Styles\Index.css">
     <script src="node_modules\jquery\dist\jquery.min.js" charset="utf-8"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.min.js" charset="utf-8"></script>
+    <script src="JS\MockData.js" charset="utf-8"></script>
     <script src="JS\Index.js" charset="utf-8"></script>
     <title></title>
   </head>
@@ -13,10 +14,15 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3" id="left-panel">
-
+          <div class="btn-group">
+            <button id="site-selector-btn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span id="site-name-display">Choose your site</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" id="site-selector"></ul>
+          </div>
         </div>
         <div class="col-sm-9" id="right-panel">
-          
+
         </div>
       </div>
     </div>

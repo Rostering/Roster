@@ -1,3 +1,5 @@
+
+
 .container-fluid {
   margin-top: 40px;
 }
@@ -12,4 +14,12 @@
   outline: 1px dashed grey;
   min-height: 500px;
   /*border-collapse: collapse;*/
+}
+
+#site-name-display {
+  min-width: 150px;
+}
+
+#site-selector-btn span {
+  display: inline-block;
 }

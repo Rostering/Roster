@@ -1,20 +1,15 @@
 $(function(){
-  var $siteSelector =  $("#site-selector");
-  
-  // Append sites to dropdown list
-  Sites.forEach(function(site){
-    $siteSelector.append(appendSite(site));
+  $("#sites").kendoDropDownList({
+    filter: "contains",
+    dataSource: {
+      data: Sites
+    },
+    dataTextField: "name",
+    dataValueField: "id",
+    change: function(){
+      // console.log(this.value());
+    },
   });
-
-  // Register onClick event on dropdown list
-  $siteSelector.on("click",".site",function(){
-    $("#site-name-display").html($(this).html());
-  });
+  $("#startTime").kendoTimePicker();
+  $("#finishTime").kendoTimePicker();
 })
-
-function appendSite(siteObj){
-  return $("<li>").append($("<a>").attr({
-    value: siteObj.id,
-    class: "site",
-  }).html(siteObj.name));
-}

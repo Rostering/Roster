@@ -16,10 +16,21 @@
   /*border-collapse: collapse;*/
 }
 
-#site-name-display {
-  min-width: 150px;
+/*.staff-row{
+  height: 80px;
+}*/
+
+.k-grid tr:hover {
+    color: #787878;
+    background-color: white;
 }
 
-/*#site-selector-btn span {
-  display: inline-block;
-}*/
+.add-roster-btn{
+  cursor: pointer;
+}
+
+.add-roster-wrapper{
+  text-align:center;
+  vertical-align: bottom;
+  min-height: 80px;
+}

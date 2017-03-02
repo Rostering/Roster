@@ -18,12 +18,6 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3" id="left-panel">
-          <!-- <div class="btn-group">
-            <button id="site-selector-btn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span id="site-name-display">Choose your site</span> <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" id="site-selector"></ul>
-          </div> -->
           <div class="demo-section k-content">
             <h4>Sites</h4>
             <input id="sites" style="width: 100%;" />
@@ -34,9 +28,23 @@
           </div>
         </div>
         <div class="col-sm-9" id="right-panel">
-
+          <div id="scheduler"></div>
         </div>
       </div>
     </div>
+
+    <script id="template" type="text/x-kendo-template">
+      <tr data-uid="#= uid #" class="staff-row">
+        <td>
+          <strong>#: name #</strong>
+        </td>
+        <td >
+          <div class="add-roster-wrapper">
+            <span class="glyphicon glyphicon-plus add-roster-btn"></span>
+          </div>
+        </td>
+      </tr>
+    </script>
+
   </body>
 </html>
